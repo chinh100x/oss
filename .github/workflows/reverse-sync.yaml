@@ -17,6 +17,7 @@ jobs:
               - key: portmon
                 exclude:
                   - .github
+                  - .env.template
                 break_check:
                   install: "true"
                   run: "python3 src/portmon/covenant.py"
