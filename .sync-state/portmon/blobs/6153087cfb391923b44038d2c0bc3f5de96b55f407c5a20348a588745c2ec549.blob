@@ -1,9 +1,0 @@
-def check():
-    print("checked")
-    return True
-
-def audit():
-    return "ok"
-
-def printf(input):
-    print(input)
