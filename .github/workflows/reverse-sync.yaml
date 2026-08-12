@@ -12,7 +12,17 @@ jobs:
           fetch-depth: 0
       - uses: chinh100x/sync-service@main
         with:
-          config: sync/monitoring.yaml
+          config: |
+            destination:
+              repo: chinh100x/oss
+              branch: main
+            mappings:
+              - key: portmon
+                source: src/portmon
+                dest: plugin
+                break_check:
+                  install: "true"
+                  run: "python3 plugin/covenant.py"
           direction: reverse
           counterpart-repo: chinh100x/prod
           counterpart-branch: main
