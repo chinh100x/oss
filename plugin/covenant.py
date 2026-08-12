@@ -7,3 +7,6 @@ def audit():
 
 def status():
     return "ready"
+
+def version():
+    return "1.0"
