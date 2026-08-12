@@ -1,6 +1,6 @@
 {
-  "last_source_sha": "917a5d8d2d4107913af5a314d2c7b7a2792f56e4",
+  "last_source_sha": "907ca93602756b145d0cfe14ce55451b68aabfef",
   "files": {
-    "plugin/covenant.py": "sha256:0f36905267a79649f69a260615de7ba2febf1199d4a6a8470d45fe66730865e2"
+    "plugin/covenant.py": "sha256:3cb9d48c4fcf9e1f17256915db87827008ab78c28419c030d7259b75f0b71996"
   }
 }
