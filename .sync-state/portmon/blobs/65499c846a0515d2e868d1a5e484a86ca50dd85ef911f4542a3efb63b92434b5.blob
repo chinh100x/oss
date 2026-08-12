@@ -1,0 +1,1 @@
+0000000000000000000000000000000000000000 526471e4e7f707ee855435f845d903e807aeeab0 runner <runner@runnervmvrwv9.2bjrkiugu45unjuat4bmm5ujeb.ex.internal.cloudapp.net> 1786526144 +0000	fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*: storing head

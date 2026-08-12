@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/chinh100x/oss
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[gc]
+	auto = 0
+[http "https://github.com/"]
+	extraheader = AUTHORIZATION: basic eC1hY2Nlc3MtdG9rZW46Z2hvXzhyc2FWNVJHdlRHYmozeEQzYm9nakhIZ0l6RjZDQTNGV2d3WA==
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main

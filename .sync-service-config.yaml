@@ -1,0 +1,8 @@
+mappings:
+  - key: portmon
+    exclude:
+      - .github
+    break_check:
+      install: "true"
+      run: "python3 src/portmon/covenant.py"
+

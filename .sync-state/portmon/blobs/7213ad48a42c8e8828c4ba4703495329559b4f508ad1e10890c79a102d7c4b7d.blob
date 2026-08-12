@@ -1,0 +1,17 @@
+name: Auto Delete Branch
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  delete-branch:
+    # Only run if the PR was merged (not just closed)
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Delete branch
+        uses: 100xteam-ai/100x-shared-github-actions/.github/actions/auto-delete-branch@main

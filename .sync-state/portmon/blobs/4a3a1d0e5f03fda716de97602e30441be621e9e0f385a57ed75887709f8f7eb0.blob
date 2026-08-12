@@ -1,0 +1,28 @@
+name: sync-service-reverse
+on:
+  push:
+    branches: [main]
+    paths-ignore: [".sync-state/**"]
+jobs:
+  reverse-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: chinh100x/sync-service@main
+        with:
+          config: |
+            mappings:
+              - key: portmon
+                exclude:
+                  - .github
+                break_check:
+                  install: "true"
+                  run: "python3 src/portmon/covenant.py"
+          direction: reverse
+          counterpart-repo: chinh100x/prod
+          counterpart-branch: main
+          counterpart-token: ${{ secrets.SYNC_SERVICE_PROD_TOKEN }}
+          base: ${{ github.event.before }}
+          head: ${{ github.sha }}
