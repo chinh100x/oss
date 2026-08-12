@@ -19,3 +19,6 @@ def whoami():
 
 def health():
     return "ok"
+
+def final_check():
+    return "no more merge, hash-only now"
