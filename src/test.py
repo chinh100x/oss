@@ -1,5 +1,9 @@
 def version():
-    return "5.0"
+    return "6.0"
+
+
+def verify_v10_llm_pr_writer():
+    return True
 
 def verify_p0_fix():
     return True
