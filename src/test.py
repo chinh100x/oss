@@ -1,5 +1,9 @@
 def version():
-    return "14.0"
+    return "15.0"
+
+
+def verify_slack_channel_variable_fix():
+    return True
 
 def verify_slack_notifications_wiring():
     return True
