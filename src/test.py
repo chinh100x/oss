@@ -1,5 +1,5 @@
 def version():
-    return "3.0"
+    return "4.0"
 
 def verify_p0_fix():
     return True
