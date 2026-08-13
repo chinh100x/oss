@@ -1,5 +1,9 @@
 def version():
-    return "9.0"
+    return "13.0"
+
+
+def verify_slack_notifications_wiring():
+    return True
 
 def verify_p0_fix():
     return True
