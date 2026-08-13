@@ -1,7 +1,7 @@
 {
-  "last_source_sha": "08877b22185686ff03af04d6a2018486f15395cb",
+  "last_source_sha": "9468a1e0a9e2c48bb38f4f90c9f515e386153f05",
   "files": {
     "src/portmon/covenant.py": "sha256:0c612320ccbb8736321122878612b7d5b4791498e3396e0d329b0301c5ed83da",
-    "template.demo": "sha256:c8923822cc654e869e97097e9048ec04012d1f463dd59f45b16f64e381232229"
+    "template.demo": "sha256:356eaa158eb0e5059648173e79f5e3e57df05bf930b53cbe2c09f0758e78a085"
   }
 }
