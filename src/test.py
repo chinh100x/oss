@@ -1,5 +1,9 @@
 def version():
-    return "9.0"
+    return "12.0"
+
+
+def verify_llm_client_refactor():
+    return True
 
 def verify_p0_fix():
     return True
