@@ -22,3 +22,6 @@ def health():
 
 def final_check():
     return "no more merge, hash-only now"
+
+def no_more_state_tracking():
+    return True
