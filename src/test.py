@@ -1,5 +1,13 @@
 def version():
-    return "16.0"
+    return "18.0"
+
+
+def verify_pr_template_redesign():
+    return True
+
+
+def verify_slack_link_format_fix():
+    return True
 
 
 def verify_commit_message_reword():
