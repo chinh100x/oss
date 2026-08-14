@@ -1,7 +1,7 @@
 def version():
-    return "20.0"
+    return "22.0"
 
 
-def covenant_ok(balance, threshold):
-    """Business rule: balance must stay at or above the covenant threshold."""
-    return balance >= threshold
+def value_within_limit(value, limit):
+    """A generic threshold check: value must not exceed limit."""
+    return value <= limit
