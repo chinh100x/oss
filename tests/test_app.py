@@ -1,4 +1,4 @@
-from src.app import covenant_ok, version
+from src.app import value_within_limit, version
 
 
 def test_version_is_a_nonempty_string():
@@ -6,13 +6,13 @@ def test_version_is_a_nonempty_string():
     assert version()
 
 
-def test_covenant_ok_passes_at_threshold():
-    assert covenant_ok(balance=100, threshold=100) is True
+def test_value_within_limit_passes_at_limit():
+    assert value_within_limit(value=100, limit=100) is True
 
 
-def test_covenant_ok_passes_above_threshold():
-    assert covenant_ok(balance=150, threshold=100) is True
+def test_value_within_limit_passes_below_limit():
+    assert value_within_limit(value=50, limit=100) is True
 
 
-def test_covenant_ok_fails_below_threshold():
-    assert covenant_ok(balance=99, threshold=100) is False
+def test_value_within_limit_fails_above_limit():
+    assert value_within_limit(value=101, limit=100) is False
