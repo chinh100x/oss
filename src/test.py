@@ -1,5 +1,9 @@
 def version():
-    return "16.0"
+    return "17.0"
+
+
+def verify_slack_link_format_fix():
+    return True
 
 
 def verify_commit_message_reword():
