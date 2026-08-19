@@ -1,5 +1,5 @@
 def version():
-    return "36.0"
+    return "37.0"
 
 
 def value_within_limit(value, limit):
